@@ -1,0 +1,21 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "cucmber tests",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node_modules/.bin/cypress open",
+    "test": "npx cypress run",
+    "pretest": "node ./cypress/reporting/delete-results.js",
+    "report": "node ./cypress/reporting/report.js"
+  },
+ "cypress-cucumber-preprocessor": {"nonGlobalStepDefinitions": true},
+  "author": "Suneela",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^8.3.1",
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "cypress-iframe": "^1.0.1",
+    "cucumber-html-reporter": "^5.4.0"
+  }
+}
